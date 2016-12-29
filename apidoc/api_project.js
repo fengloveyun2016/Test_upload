@@ -1,0 +1,1 @@
+define({  "name": "微官网",  "version": "0.1.0",  "description": "微官网描述",  "title": "微官网接口文档",  "url": "http://thinkphp.52tty.com/index.php",  "sampleUrl": "http://thinkphp.52tty.com/index.php",  "apidoc": "0.2.0",  "generator": {    "name": "apidoc",    "time": "2016-11-15T11:11:23.744Z",    "url": "http://apidocjs.com",    "version": "0.16.1"  }});

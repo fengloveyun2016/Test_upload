@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>微官网</title>
+    <script src="/node_modules/hdjs/js/jquery.min.js"></script>
+</head>
+<body>
+<ul id="news"></ul>
+<script>
+    $.get('http://thinkphp.52tty.com/index.php/Api/article/lists/access_token/', function (json) {
+        if (json.code == 200) {
+            $.each(json.data, function (i) {
+                $("#news").append('<li>'+json.data[i].title+'</li>')
+            });
+        }
+    }, 'json');
+</script>
+</body>
+</html>
